@@ -22,6 +22,9 @@
 		B598585E199AFFBC000A62DF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5985842199AFFBC000A62DF /* CoreData.framework */; };
 		B5985866199AFFBC000A62DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5985864199AFFBC000A62DF /* InfoPlist.strings */; };
 		B5985868199AFFBC000A62DF /* JHotelListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985867199AFFBC000A62DF /* JHotelListTests.m */; };
+		B5985872199AFFFF000A62DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5985871199AFFFF000A62DF /* Main.storyboard */; };
+		B5985875199B0267000A62DF /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985874199B0267000A62DF /* TopViewController.m */; };
+		B5985878199B035C000A62DF /* AreaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985877199B035C000A62DF /* AreaListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		B5985863199AFFBC000A62DF /* JHotelListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JHotelListTests-Info.plist"; sourceTree = "<group>"; };
 		B5985865199AFFBC000A62DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5985867199AFFBC000A62DF /* JHotelListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHotelListTests.m; sourceTree = "<group>"; };
+		B5985871199AFFFF000A62DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B5985873199B0267000A62DF /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		B5985874199B0267000A62DF /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		B5985876199B035C000A62DF /* AreaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaListViewController.h; sourceTree = "<group>"; };
+		B5985877199B035C000A62DF /* AreaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,11 @@
 		B5985830199AFFBB000A62DF = {
 			isa = PBXGroup;
 			children = (
+				B5985876199B035C000A62DF /* AreaListViewController.h */,
+				B5985877199B035C000A62DF /* AreaListViewController.m */,
+				B5985873199B0267000A62DF /* TopViewController.h */,
+				B5985874199B0267000A62DF /* TopViewController.m */,
+				B5985871199AFFFF000A62DF /* Main.storyboard */,
 				B5985844199AFFBC000A62DF /* JHotelList */,
 				B5985861199AFFBC000A62DF /* JHotelListTests */,
 				B598583B199AFFBB000A62DF /* Frameworks */,
@@ -228,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
 			);
@@ -248,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5985875199B0267000A62DF /* TopViewController.m in Sources */,
+				B5985878199B035C000A62DF /* AreaListViewController.m in Sources */,
 				B598584F199AFFBC000A62DF /* AppDelegate.m in Sources */,
 				B5985852199AFFBC000A62DF /* JHotelList.xcdatamodeld in Sources */,
 				B598584B199AFFBC000A62DF /* main.m in Sources */,
