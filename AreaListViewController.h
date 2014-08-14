@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AreaListViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITableView *areaListTable;
+
 
 @end

@@ -14,7 +14,6 @@
 		B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5985847199AFFBC000A62DF /* InfoPlist.strings */; };
 		B598584B199AFFBC000A62DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B598584A199AFFBC000A62DF /* main.m */; };
 		B598584F199AFFBC000A62DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B598584E199AFFBC000A62DF /* AppDelegate.m */; };
-		B5985852199AFFBC000A62DF /* JHotelList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5985850199AFFBC000A62DF /* JHotelList.xcdatamodeld */; };
 		B5985854199AFFBC000A62DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5985853199AFFBC000A62DF /* Images.xcassets */; };
 		B598585B199AFFBC000A62DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598585A199AFFBC000A62DF /* XCTest.framework */; };
 		B598585C199AFFBC000A62DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598583C199AFFBB000A62DF /* Foundation.framework */; };
@@ -25,6 +24,12 @@
 		B5985872199AFFFF000A62DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5985871199AFFFF000A62DF /* Main.storyboard */; };
 		B5985875199B0267000A62DF /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985874199B0267000A62DF /* TopViewController.m */; };
 		B5985878199B035C000A62DF /* AreaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985877199B035C000A62DF /* AreaListViewController.m */; };
+		B5C1EE22199C497A008A9755 /* CountryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE21199C497A008A9755 /* CountryListViewController.m */; };
+		B5C1EE27199C4B32008A9755 /* JHotelList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE25199C4B32008A9755 /* JHotelList.xcdatamodeld */; };
+		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
+		B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2B199C4B8F008A9755 /* Country.m */; };
+		B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2D199C4B8F008A9755 /* Hotel.m */; };
+		B5C1EE32199C5637008A9755 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5C1EE31199C5637008A9755 /* JHotelList.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +54,6 @@
 		B598584C199AFFBC000A62DF /* JHotelList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JHotelList-Prefix.pch"; sourceTree = "<group>"; };
 		B598584D199AFFBC000A62DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B598584E199AFFBC000A62DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5985851199AFFBC000A62DF /* JHotelList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JHotelList.xcdatamodel; sourceTree = "<group>"; };
 		B5985853199AFFBC000A62DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5985859199AFFBC000A62DF /* JHotelListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHotelListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B598585A199AFFBC000A62DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,6 +65,16 @@
 		B5985874199B0267000A62DF /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 		B5985876199B035C000A62DF /* AreaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaListViewController.h; sourceTree = "<group>"; };
 		B5985877199B035C000A62DF /* AreaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaListViewController.m; sourceTree = "<group>"; };
+		B5C1EE20199C497A008A9755 /* CountryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryListViewController.h; sourceTree = "<group>"; };
+		B5C1EE21199C497A008A9755 /* CountryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryListViewController.m; sourceTree = "<group>"; };
+		B5C1EE26199C4B32008A9755 /* Proto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Proto.xcdatamodel; sourceTree = "<group>"; };
+		B5C1EE28199C4B8F008A9755 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = SOURCE_ROOT; };
+		B5C1EE29199C4B8F008A9755 /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = SOURCE_ROOT; };
+		B5C1EE2A199C4B8F008A9755 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = SOURCE_ROOT; };
+		B5C1EE2B199C4B8F008A9755 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = SOURCE_ROOT; };
+		B5C1EE2C199C4B8F008A9755 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = SOURCE_ROOT; };
+		B5C1EE2D199C4B8F008A9755 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = SOURCE_ROOT; };
+		B5C1EE31199C5637008A9755 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,8 @@
 		B5985830199AFFBB000A62DF = {
 			isa = PBXGroup;
 			children = (
+				B5C1EE20199C497A008A9755 /* CountryListViewController.h */,
+				B5C1EE21199C497A008A9755 /* CountryListViewController.m */,
 				B5985876199B035C000A62DF /* AreaListViewController.h */,
 				B5985877199B035C000A62DF /* AreaListViewController.m */,
 				B5985873199B0267000A62DF /* TopViewController.h */,
@@ -128,10 +144,16 @@
 		B5985844199AFFBC000A62DF /* JHotelList */ = {
 			isa = PBXGroup;
 			children = (
+				B5C1EE28199C4B8F008A9755 /* Area.h */,
+				B5C1EE29199C4B8F008A9755 /* Area.m */,
+				B5C1EE2A199C4B8F008A9755 /* Country.h */,
+				B5C1EE2B199C4B8F008A9755 /* Country.m */,
+				B5C1EE2C199C4B8F008A9755 /* Hotel.h */,
+				B5C1EE2D199C4B8F008A9755 /* Hotel.m */,
 				B598584D199AFFBC000A62DF /* AppDelegate.h */,
 				B598584E199AFFBC000A62DF /* AppDelegate.m */,
 				B5985853199AFFBC000A62DF /* Images.xcassets */,
-				B5985850199AFFBC000A62DF /* JHotelList.xcdatamodeld */,
+				B5C1EE25199C4B32008A9755 /* JHotelList.xcdatamodeld */,
 				B5985845199AFFBC000A62DF /* Supporting Files */,
 			);
 			path = JHotelList;
@@ -140,6 +162,7 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B5C1EE31199C5637008A9755 /* JHotelList.sqlite */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -244,6 +267,7 @@
 				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
+				B5C1EE32199C5637008A9755 /* JHotelList.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */,
+				B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */,
+				B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */,
 				B5985875199B0267000A62DF /* TopViewController.m in Sources */,
+				B5C1EE27199C4B32008A9755 /* JHotelList.xcdatamodeld in Sources */,
 				B5985878199B035C000A62DF /* AreaListViewController.m in Sources */,
 				B598584F199AFFBC000A62DF /* AppDelegate.m in Sources */,
-				B5985852199AFFBC000A62DF /* JHotelList.xcdatamodeld in Sources */,
 				B598584B199AFFBC000A62DF /* main.m in Sources */,
+				B5C1EE22199C497A008A9755 /* CountryListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +491,7 @@
 				B598586D199AFFBC000A62DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B598586E199AFFBC000A62DF /* Build configuration list for PBXNativeTarget "JHotelListTests" */ = {
 			isa = XCConfigurationList;
@@ -471,18 +500,19 @@
 				B5985870199AFFBC000A62DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B5985850199AFFBC000A62DF /* JHotelList.xcdatamodeld */ = {
+		B5C1EE25199C4B32008A9755 /* JHotelList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B5985851199AFFBC000A62DF /* JHotelList.xcdatamodel */,
+				B5C1EE26199C4B32008A9755 /* Proto.xcdatamodel */,
 			);
-			currentVersion = B5985851199AFFBC000A62DF /* JHotelList.xcdatamodel */;
+			currentVersion = B5C1EE26199C4B32008A9755 /* Proto.xcdatamodel */;
 			path = JHotelList.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */

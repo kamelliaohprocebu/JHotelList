@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Area" representedClassName="Area" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Country" inverseName="area" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="country" inverseEntity="Area" syncable="YES"/>
+        <relationship name="hotel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hotel" inverseName="country" inverseEntity="Hotel" syncable="YES"/>
+    </entity>
+    <entity name="Hotel" representedClassName="Hotel" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="hotel" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Area" positionX="-810" positionY="-243" width="128" height="73"/>
+        <element name="Country" positionX="-605" positionY="-82" width="128" height="88"/>
+        <element name="Hotel" positionX="-333" positionY="90" width="128" height="118"/>
+    </elements>
+</model>
