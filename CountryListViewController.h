@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CountryListViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *CountryTable;
 
 @end

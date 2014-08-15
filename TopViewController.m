@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"国一覧";
+    self.title = @"JHotelList";
     
     
     

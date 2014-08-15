@@ -62,12 +62,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC1-Oq-x2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="-285"/>
+            <point key="canvasLocation" x="1288" y="-285"/>
         </scene>
         <!--Country List View Controller-->
         <scene sceneID="jXe-M1-xqR">
             <objects>
-                <viewController id="Cq3-Sb-iH6" customClass="CountryListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountryListViewController" id="Cq3-Sb-iH6" customClass="CountryListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="91s-Or-OJq"/>
                         <viewControllerLayoutGuide type="bottom" id="eS6-fW-hg6"/>
@@ -75,12 +75,22 @@
                     <view key="view" contentMode="scaleToFill" id="0fC-us-oIe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6fR-Sz-wRj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="CountryTable" destination="6fR-Sz-wRj" id="ulq-JV-tdt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2o-zD-AcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="-287"/>
+            <point key="canvasLocation" x="1889" y="-285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fqF-TT-dEo">
