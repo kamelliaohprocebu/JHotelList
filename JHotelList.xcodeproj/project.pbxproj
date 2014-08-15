@@ -29,7 +29,7 @@
 		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
 		B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2B199C4B8F008A9755 /* Country.m */; };
 		B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2D199C4B8F008A9755 /* Hotel.m */; };
-		B5C1EE32199C5637008A9755 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5C1EE31199C5637008A9755 /* JHotelList.sqlite */; };
+		B5F28056199DB772004365D5 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5F28055199DB772004365D5 /* JHotelList.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,7 @@
 		B5C1EE2B199C4B8F008A9755 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = SOURCE_ROOT; };
 		B5C1EE2C199C4B8F008A9755 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = SOURCE_ROOT; };
 		B5C1EE2D199C4B8F008A9755 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = SOURCE_ROOT; };
-		B5C1EE31199C5637008A9755 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
+		B5F28055199DB772004365D5 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5C1EE31199C5637008A9755 /* JHotelList.sqlite */,
+				B5F28055199DB772004365D5 /* JHotelList.sqlite */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -267,7 +267,7 @@
 				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
-				B5C1EE32199C5637008A9755 /* JHotelList.sqlite in Resources */,
+				B5F28056199DB772004365D5 /* JHotelList.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
