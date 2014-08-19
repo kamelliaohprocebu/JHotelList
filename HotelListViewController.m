@@ -1,20 +1,27 @@
 //
-//  AreaListViewController.m
+//  HotelListViewController.m
 //  JHotelList
 //
-//  Created by 安倍裕貴 on 2014/08/13.
+//  Created by 安倍裕貴 on 2014/08/19.
 //  Copyright (c) 2014年 Yuki Abe. All rights reserved.
 //
 
-#import "AreaListViewController.h"
+#import "HotelListViewController.h"
+#import "Hotel.h"
+#import "Country.h"
+#import <CoreData/CoreData.h>
 #import "Area.h"
-#import "CountryListViewController.h"
 
-@interface AreaListViewController ()
+@interface HotelListViewController ()
+{
+
+    NSArray *_hotelArray;
+
+}
 
 @end
 
-@implementation AreaListViewController
+@implementation HotelListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,10 +37,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.areaListTable.dataSource = self;
-    self.areaListTable.delegate = self;
+    self.hotelListTable.dataSource = self;
+    self.hotelListTable.delegate = self;
     [self fetchedResultsController];
-
+    
+    NSSet *hotels = self.country.hotel;
+    _hotelArray = [hotels allObjects];
+    
+    NSLog(@"%@",_hotelArray);
+    
 }
 
 - (void)loadView
@@ -49,7 +61,8 @@
     
     // NSEntityDescription:エンティティの定義を管理するクラス
     // ここでは、Placeテーブルを参照する旨を指定している
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Area" inManagedObjectContext:_managedObjectContext];
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Hotel" inManagedObjectContext:_managedObjectContext];
+    
     
     // NSFetchRequest:データの検索条件を管理するクラス
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -63,7 +76,7 @@
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                         managedObjectContext:_managedObjectContext
                                           sectionNameKeyPath:nil
-                                                   cacheName:NSStringFromClass([AreaListViewController class])];
+                                                   cacheName:NSStringFromClass([HotelListViewController class])];
     
     localFetchedResultController.delegate = self;
     _fetchedResultController = localFetchedResultController;
@@ -88,42 +101,26 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
-//    NSManagedObject *managedObject = [_fetchedResultController objectAtIndexPath:indexPath];
-//    cell.textLabel.text = [managedObject valueForKey:@"name"];
-//    return cell;
-
-    Area *area = [_fetchedResultController objectAtIndexPath:indexPath];
-    cell.textLabel.text = area.name;
-    ;
-    
-//    area.country
-    
-        
+    Hotel *hotel = _hotelArray[indexPath.row];
+    cell.textLabel.text = hotel.name;
     return cell;
-
+    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%lu", (unsigned long)[[[self.fetchedResultController sections] objectAtIndex:section] numberOfObjects]);
-    return [[[_fetchedResultController sections] objectAtIndex:section] numberOfObjects];
+    return _hotelArray.count;
     //    return [_fetchedResultController.fetchedObjects count];
+    
+    
+    
+    
     
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NSLog(@"Tap:%ld",(long)indexPath.row);
-    
-    CountryListViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"CountryListViewController"];
-    
-    [dvc setArea:[self.fetchedResultController objectAtIndexPath:[self.areaListTable indexPathForSelectedRow]]];
-    
-    
-    //ナビゲーションコントローラーの機能で画面遷移
-    [[self navigationController]pushViewController:dvc animated:YES];
-
 }
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC1-Oq-x2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="-285"/>
+            <point key="canvasLocation" x="760" y="-285"/>
         </scene>
         <!--Country List View Controller-->
         <scene sceneID="jXe-M1-xqR">
@@ -82,13 +82,42 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BDX-nr-ICQ"/>
                     <connections>
                         <outlet property="CountryTable" destination="6fR-Sz-wRj" id="ulq-JV-tdt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2o-zD-AcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2415" y="-285"/>
+            <point key="canvasLocation" x="1289" y="-285"/>
+        </scene>
+        <!--Hotel List View Controller-->
+        <scene sceneID="5ph-Gz-gI0">
+            <objects>
+                <viewController storyboardIdentifier="HotelListViewController" id="WZU-js-PJc" customClass="HotelListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bap-C8-39p"/>
+                        <viewControllerLayoutGuide type="bottom" id="ua9-8b-RL2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oS9-Ll-jen">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DQn-Lf-mhB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="hotelListTable" destination="DQn-Lf-mhB" id="XHW-cr-bfV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4D-nO-tbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="-285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fqF-TT-dEo">
@@ -106,7 +135,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32q-Xb-tnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192" y="-291"/>
+            <point key="canvasLocation" x="274" y="447"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vnx-eI-1dG">
@@ -124,7 +153,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPQ-CC-Mk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288" y="-285"/>
+            <point key="canvasLocation" x="760" y="447"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G5t-gi-zql">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ph0-ov-ydw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJr-ru-uSv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cq3-Sb-iH6" kind="relationship" relationship="rootViewController" id="zJM-Ub-3D4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWd-FO-aYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="447"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

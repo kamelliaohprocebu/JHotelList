@@ -10,6 +10,7 @@
 #import "Country.h"
 #import "Area.h"
 #import <CoreData/CoreData.h>
+#import "HotelListViewController.h"
 
 @interface CountryListViewController ()
 {
@@ -136,15 +137,14 @@
     
 //    NSLog(@"Tap:%ld",(long)indexPath.row);
 //    
-//    CountryListViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"CountryListViewController"];
+        HotelListViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelListViewController"];
 //    
-    
-    //行番号を保存
-    //    dvc.selectnum = indexPath.row;
-    //
-    
-    //ナビゲーションコントローラーの機能で画面遷移
-//    [[self navigationController]pushViewController:dvc animated:YES];
+        [dvc setCountry:[self.fetchedResultController objectAtIndexPath:[self.CountryTable indexPathForSelectedRow]]];
+//    
+//    
+//    //ナビゲーションコントローラーの機能で画面遷移
+        [[self navigationController]pushViewController:dvc animated:YES];
+
     
 }
 
