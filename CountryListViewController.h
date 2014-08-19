@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface CountryListViewController : UIViewController
+@class Area;
 
 
+@interface CountryListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
-
+@property (nonatomic,strong)Area *area;
 @property (weak, nonatomic) IBOutlet UITableView *CountryTable;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
+
 
 @end

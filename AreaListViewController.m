@@ -95,6 +95,7 @@
 
     Area *area = [_fetchedResultController objectAtIndexPath:indexPath];
     cell.textLabel.text = area.name;
+    ;
     
 //    area.country
     
@@ -108,10 +109,6 @@
     return [[[_fetchedResultController sections] objectAtIndex:section] numberOfObjects];
     //    return [_fetchedResultController.fetchedObjects count];
     
-    
-
-    
-    
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -119,6 +116,8 @@
     NSLog(@"Tap:%ld",(long)indexPath.row);
     
     CountryListViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"CountryListViewController"];
+    
+    [dvc setArea:[self.fetchedResultController objectAtIndexPath:[self.areaListTable indexPathForSelectedRow]]];
     
     
     //行番号を保存

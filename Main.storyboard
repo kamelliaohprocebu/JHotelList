@@ -17,11 +17,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM9-Vb-fRT">
-                                <rect key="frame" x="25" y="131" width="158" height="156"/>
+                                <rect key="frame" x="0.0" y="75" width="148" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="btn:" destination="SIg-7y-vG2" eventType="touchUpInside" id="QMa-HN-1nf"/>
                                 </connections>
@@ -62,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC1-Oq-x2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288" y="-285"/>
+            <point key="canvasLocation" x="1814" y="-285"/>
         </scene>
         <!--Country List View Controller-->
         <scene sceneID="jXe-M1-xqR">
@@ -90,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2o-zD-AcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="-285"/>
+            <point key="canvasLocation" x="2415" y="-285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fqF-TT-dEo">
@@ -109,6 +107,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32q-Xb-tnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-192" y="-291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vnx-eI-1dG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IKR-is-pYE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qT6-3z-dwx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hi0-Da-U2d" kind="relationship" relationship="rootViewController" id="aO2-2O-XvJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPQ-CC-Mk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="-285"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
