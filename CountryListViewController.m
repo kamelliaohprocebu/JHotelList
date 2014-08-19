@@ -42,6 +42,9 @@
     
     NSSet *countries = self.area.country;
     _countryArray = [countries allObjects];
+    
+    
+    
     //    for (Country *country in countries) {
     //        NSLog(@"country=%@",country);
     //    }
@@ -140,8 +143,14 @@
         HotelListViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelListViewController"];
 //    
         [dvc setCountry:[self.fetchedResultController objectAtIndexPath:[self.CountryTable indexPathForSelectedRow]]];
-//    
-//    
+    
+    NSLog(@"%@",[self.fetchedResultController objectAtIndexPath:[self.CountryTable indexPathForSelectedRow]]);
+    Country *country = _countryArray[indexPath.row];
+    NSLog(@"hotels = %@", country.hotel);
+
+//
+//
+    
 //    //ナビゲーションコントローラーの機能で画面遷移
         [[self navigationController]pushViewController:dvc animated:YES];
 

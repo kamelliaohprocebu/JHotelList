@@ -119,7 +119,9 @@
     
     [dvc setArea:[self.fetchedResultController objectAtIndexPath:[self.areaListTable indexPathForSelectedRow]]];
     
-    
+    Area *area = [_fetchedResultController objectAtIndexPath:indexPath];
+    NSLog(@"countrys = %@", area.country);
+
     //ナビゲーションコントローラーの機能で画面遷移
     [[self navigationController]pushViewController:dvc animated:YES];
 
