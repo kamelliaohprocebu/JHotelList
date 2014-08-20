@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50BA1E619A44578001022D4 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B50BA1E519A44578001022D4 /* JHotelList.sqlite */; };
 		B529804A19A2E3E40074B892 /* HotelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B529804919A2E3E40074B892 /* HotelListViewController.m */; };
-		B529804C19A2E7AC0074B892 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B529804B19A2E7AC0074B892 /* JHotelList.sqlite */; };
 		B598583D199AFFBB000A62DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598583C199AFFBB000A62DF /* Foundation.framework */; };
 		B598583F199AFFBB000A62DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598583E199AFFBB000A62DF /* CoreGraphics.framework */; };
 		B5985841199AFFBB000A62DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5985840199AFFBB000A62DF /* UIKit.framework */; };
@@ -44,9 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B50BA1E519A44578001022D4 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B529804819A2E3E40074B892 /* HotelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelListViewController.h; sourceTree = "<group>"; };
 		B529804919A2E3E40074B892 /* HotelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelListViewController.m; sourceTree = "<group>"; };
-		B529804B19A2E7AC0074B892 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B5985839199AFFBB000A62DF /* JHotelList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHotelList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B598583C199AFFBB000A62DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B598583E199AFFBB000A62DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,7 +167,7 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B529804B19A2E7AC0074B892 /* JHotelList.sqlite */,
+				B50BA1E519A44578001022D4 /* JHotelList.sqlite */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -272,7 +272,7 @@
 				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
-				B529804C19A2E7AC0074B892 /* JHotelList.sqlite in Resources */,
+				B50BA1E619A44578001022D4 /* JHotelList.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
