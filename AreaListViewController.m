@@ -34,9 +34,9 @@
     self.areaListTable.delegate = self;
     [self fetchedResultsController];
     
-    self.areaListTable.backgroundColor = [UIColor blueColor];
-    self.areaListTable.rowHeight = 70;
-    
+//    self.areaListTable.backgroundColor = [UIColor blueColor];
+//    self.areaListTable.rowHeight = 70;
+//    
     
 
 }
