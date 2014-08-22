@@ -30,9 +30,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"JHotelList";
-    
-    
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,8 +58,8 @@
     [[self navigationController]pushViewController:dvc animated:YES];
 
     
-    
-    
+    //[self.btn setTitle : @"国から選ぶ" forState : UIControlStateNormal];
+
     
     
 }

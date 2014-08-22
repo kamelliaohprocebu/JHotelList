@@ -40,6 +40,8 @@
     self.CountryTable.delegate = self;
     [self fetchedResultsController];
     
+    
+    
     NSSet *countries = self.area.country;
     _countryArray = [countries allObjects];
     

@@ -41,6 +41,8 @@
     self.hotelListTable.delegate = self;
     [self fetchedResultsController];
     
+    
+    
     NSSet *hotels = self.country.hotel;
     _hotelArray = [hotels allObjects];
     
