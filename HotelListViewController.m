@@ -12,8 +12,8 @@
 #import <CoreData/CoreData.h>
 #import "Area.h"
 #import "HotelDetailViewController.h"
-//#import "hotelListTableViewCell"
-//#import "TableViewConst.h"
+#import "hotelListTableViewCell.h"
+#import "TableViewConst.h"
 
 @interface HotelListViewController ()
 {
@@ -105,13 +105,15 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
+    hotelListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    }
     Hotel *hotel = _hotelArray[indexPath.row];
-    cell.textLabel.text = hotel.name;
+    cell.name.text = hotel.name;
+    cell.city.text = hotel.zipcode;
+    
     return cell;
     
 }
