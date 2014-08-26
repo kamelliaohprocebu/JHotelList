@@ -55,6 +55,7 @@
 		B544A5BE19A6E65C004ABD99 /* hotelListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hotelListTableViewCell.h; sourceTree = "<group>"; };
 		B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hotelListTableViewCell.m; sourceTree = "<group>"; };
 		B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hotelListTableViewCell.xib; sourceTree = "<group>"; };
+		B56562E119AC2A6F000517F1 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
 		B5985839199AFFBB000A62DF /* JHotelList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHotelList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B598583C199AFFBB000A62DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B598583E199AFFBB000A62DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +118,7 @@
 		B5985830199AFFBB000A62DF = {
 			isa = PBXGroup;
 			children = (
+				B56562E119AC2A6F000517F1 /* TableViewConst.h */,
 				B544A5BE19A6E65C004ABD99 /* hotelListTableViewCell.h */,
 				B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */,
 				B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */,

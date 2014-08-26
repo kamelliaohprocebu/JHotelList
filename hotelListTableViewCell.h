@@ -10,9 +10,7 @@
 
 @interface hotelListTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *name;
-@property (weak, nonatomic) IBOutlet UILabel *detail;
 @property (weak, nonatomic) IBOutlet UILabel *city;
-@property (weak, nonatomic) IBOutlet UILabel *mail;
-@property (weak, nonatomic) IBOutlet UILabel *url;
+
 
 @end

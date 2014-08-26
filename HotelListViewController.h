@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "TableViewConst.h"
 
 @class Area;
 @class Country;
+
 
 @interface HotelListViewController : UIViewController<UITableViewDataSource,
 UITableViewDelegate, NSFetchedResultsControllerDelegate>

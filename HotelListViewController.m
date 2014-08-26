@@ -12,6 +12,8 @@
 #import <CoreData/CoreData.h>
 #import "Area.h"
 #import "HotelDetailViewController.h"
+//#import "hotelListTableViewCell"
+//#import "TableViewConst.h"
 
 @interface HotelListViewController ()
 {
@@ -48,6 +50,10 @@
     _hotelArray = [hotels allObjects];
     
     NSLog(@"%@",_hotelArray);
+    
+    UINib *nib = [UINib nibWithNibName:TableViewCustomCellIdentifier bundle:nil];
+    [self.hotelListTable registerNib:nib forCellReuseIdentifier:@"Cell"];
+    
     
 }
 
