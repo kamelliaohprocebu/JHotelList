@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B50BA1E619A44578001022D4 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B50BA1E519A44578001022D4 /* JHotelList.sqlite */; };
 		B529804A19A2E3E40074B892 /* HotelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B529804919A2E3E40074B892 /* HotelListViewController.m */; };
+		B52B00C919AC239D00CD4AEC /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B00C819AC239D00CD4AEC /* HotelDetailViewController.m */; };
 		B544A5C119A6E65C004ABD99 /* hotelListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */; };
 		B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */; };
 		B598583D199AFFBB000A62DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598583C199AFFBB000A62DF /* Foundation.framework */; };
@@ -49,6 +50,8 @@
 		B50BA1E519A44578001022D4 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B529804819A2E3E40074B892 /* HotelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelListViewController.h; sourceTree = "<group>"; };
 		B529804919A2E3E40074B892 /* HotelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelListViewController.m; sourceTree = "<group>"; };
+		B52B00C719AC239D00CD4AEC /* HotelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailViewController.h; sourceTree = "<group>"; };
+		B52B00C819AC239D00CD4AEC /* HotelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailViewController.m; sourceTree = "<group>"; };
 		B544A5BE19A6E65C004ABD99 /* hotelListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hotelListTableViewCell.h; sourceTree = "<group>"; };
 		B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hotelListTableViewCell.m; sourceTree = "<group>"; };
 		B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hotelListTableViewCell.xib; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				B544A5BE19A6E65C004ABD99 /* hotelListTableViewCell.h */,
 				B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */,
 				B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */,
+				B52B00C719AC239D00CD4AEC /* HotelDetailViewController.h */,
+				B52B00C819AC239D00CD4AEC /* HotelDetailViewController.m */,
 				B529804819A2E3E40074B892 /* HotelListViewController.h */,
 				B529804919A2E3E40074B892 /* HotelListViewController.m */,
 				B5C1EE20199C497A008A9755 /* CountryListViewController.h */,
@@ -304,6 +309,7 @@
 				B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */,
 				B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */,
 				B5985875199B0267000A62DF /* TopViewController.m in Sources */,
+				B52B00C919AC239D00CD4AEC /* HotelDetailViewController.m in Sources */,
 				B5C1EE27199C4B32008A9755 /* JHotelList.xcdatamodeld in Sources */,
 				B529804A19A2E3E40074B892 /* HotelListViewController.m in Sources */,
 				B5985878199B035C000A62DF /* AreaListViewController.m in Sources */,

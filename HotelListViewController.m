@@ -11,6 +11,7 @@
 #import "Country.h"
 #import <CoreData/CoreData.h>
 #import "Area.h"
+#import "HotelDetailViewController.h"
 
 @interface HotelListViewController ()
 {
@@ -120,6 +121,9 @@
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    HotelDetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelDetailViewController"];
+    [[self navigationController]pushViewController:dvc animated:YES];
+
     
 }
 
