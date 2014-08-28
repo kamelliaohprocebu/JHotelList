@@ -130,8 +130,11 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HotelDetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelDetailViewController"];
-    [[self navigationController]pushViewController:dvc animated:YES];
+    [dvc setHotel:_hotelArray[indexPath.row]];
 
+    dvc.hotelindex = indexPath.row;
+    [[self navigationController]pushViewController:dvc animated:YES];
+    
     
 }
 
