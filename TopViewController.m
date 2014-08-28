@@ -8,6 +8,7 @@
 
 #import "TopViewController.h"
 #import "AreaListViewController.h"
+#import "catalogHotelViewController.h"
 
 @interface TopViewController ()
 
@@ -59,8 +60,13 @@
 
     
     //[self.btn setTitle : @"国から選ぶ" forState : UIControlStateNormal];
+}
 
+- (IBAction)btn2:(id)sender {
     
+    catalogHotelViewController *dvc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"catalogHotelViewController"];
     
+    //ナビゲーションコントローラーの機能で画面遷移
+    [[self navigationController]pushViewController:dvc2 animated:YES];
 }
 @end

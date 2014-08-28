@@ -4,6 +4,34 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Catalog Hotel View Controller-->
+        <scene sceneID="Lql-ZU-sSn">
+            <objects>
+                <viewController storyboardIdentifier="catalogHotelViewController" id="AzX-2I-GOy" customClass="catalogHotelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rjd-e5-YAk"/>
+                        <viewControllerLayoutGuide type="bottom" id="xp9-DF-6Nb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gTW-1N-GRV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uMa-Dg-1BD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="catalogTable" destination="uMa-Dg-1BD" id="Jm5-dG-feO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LyC-po-nRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-1001"/>
+        </scene>
         <!--Top View Controller-->
         <scene sceneID="qRB-62-bZd">
             <objects>
@@ -30,6 +58,23 @@
                                 </state>
                                 <connections>
                                     <action selector="btn:" destination="SIg-7y-vG2" eventType="touchUpInside" id="QMa-HN-1nf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="do7-aV-ZU5">
+                                <rect key="frame" x="0.0" y="296" width="320" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="一覧から選ぶ">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HiraKakuProN-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="btn2:" destination="SIg-7y-vG2" eventType="touchUpInside" id="sPJ-yv-I1r"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -155,12 +200,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ky-ks-DSa">
-                                <rect key="frame" x="33" y="405" width="241" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-5v-rWU">
                                 <rect key="frame" x="33" y="484" width="245" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,7 +219,6 @@
                         <outlet property="URL" destination="eUb-5v-rWU" id="7Pc-jA-lS7"/>
                         <outlet property="detail" destination="k84-OH-6Dh" id="gXj-nP-J9n"/>
                         <outlet property="hotelmei" destination="6KV-JV-gbV" id="wFT-Le-gTR"/>
-                        <outlet property="mail" destination="8ky-ks-DSa" id="51W-bK-TTh"/>
                         <outlet property="toshimei" destination="KEg-xF-WaN" id="aKE-PS-tGc"/>
                     </connections>
                 </viewController>
@@ -204,7 +242,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32q-Xb-tnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="447"/>
+            <point key="canvasLocation" x="-236" y="-285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vnx-eI-1dG">
