@@ -106,12 +106,12 @@
 {
     static NSString *CellIdentifier = @"Cell";
     hotelListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//    }
+
     Hotel *hotel = _hotelArray[indexPath.row];
     cell.name.text = hotel.name;
+    cell.name.adjustsFontSizeToFitWidth = YES;
+    cell.name.numberOfLines = 0;
+
     cell.city.text = hotel.zipcode;
     
     return cell;

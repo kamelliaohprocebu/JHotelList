@@ -8,7 +8,11 @@
 
 #import "catalogHotelViewController.h"
 
+
 @interface catalogHotelViewController ()
+{
+    NSArray *_hotelArray;
+}
 
 @end
 
@@ -31,6 +35,15 @@
     self.catalogTable.dataSource = self;
     self.catalogTable.delegate = self;
     [self fetchedResultsController];
+    
+    NSSet *hotels = self.country.hotel;
+    _hotelArray = [hotels allObjects];
+    
+    NSLog(@"%@",_hotelArray);
+    
+    UINib *nib = [UINib nibWithNibName:TableViewCustomCellIdentifier bundle:nil];
+    [self.catalogTable registerNib:nib forCellReuseIdentifier:@"Cell"];
+    
     
     
 }
@@ -79,17 +92,35 @@
 
 }
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//        
-//}
-//
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{}
-//
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{}
-//
-//
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    catalogHotelViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    Hotel *hotel = _hotelArray[indexPath.row];
+    
+    return cell;
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _hotelArray.count;
+    //    return [_fetchedResultController.fetchedObjects count];
+    
+    
+    
+    
+    
+}
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    
+    
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

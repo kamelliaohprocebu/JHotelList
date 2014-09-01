@@ -149,10 +149,10 @@
 		B5985830199AFFBB000A62DF = {
 			isa = PBXGroup;
 			children = (
+				B504267019AC3BBB006C9223 /* hotelListTableView */,
 				B51E6D1619AEBE93006D8625 /* catalogHotelTableView */,
 				B51E6D0E19AEBD4A006D8625 /* catalogHotelViewController.h */,
 				B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */,
-				B504267019AC3BBB006C9223 /* hotelListTableView */,
 				B52B00C719AC239D00CD4AEC /* HotelDetailViewController.h */,
 				B52B00C819AC239D00CD4AEC /* HotelDetailViewController.m */,
 				B529804819A2E3E40074B892 /* HotelListViewController.h */,

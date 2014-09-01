@@ -13,6 +13,7 @@
 #import "Country.h"
 #import "Hotel.h"
 #import "TableViewICatalogConst.h"
+#import "catalogHotelTableViewCell.h"
 
 @class Area;
 @class Country;
