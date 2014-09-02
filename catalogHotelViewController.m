@@ -36,7 +36,7 @@
     self.catalogTable.delegate = self;
     [self fetchedResultsController];
     
-    NSSet *hotels = self.country.hotel;
+    NSSet *hotels = self.coountry.hotel;
     _hotelArray = [hotels allObjects];
     
     NSLog(@"%@",_hotelArray);

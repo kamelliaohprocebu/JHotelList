@@ -23,8 +23,9 @@
 @interface catalogHotelViewController : UIViewController<UITableViewDataSource,
 UITableViewDelegate, NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *catalogTable;
-@property (nonatomic,strong)Area *area;
-@property (nonatomic,strong)Country *country;
+@property (nonatomic,strong)Area *arrea;
+@property (nonatomic,strong)Country *coountry;
+@property (nonatomic,strong)Hotel *hootel;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
