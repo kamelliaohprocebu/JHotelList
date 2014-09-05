@@ -23,6 +23,7 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Area" inManagedObjectContext:context];
     [fetchRequest setEntity:entity];
+    [fetchRequest setReturnsObjectsAsFaults:NO];
     
     NSError *error;
     NSArray *fetchObjects = [context executeFetchRequest:fetchRequest error:&error];

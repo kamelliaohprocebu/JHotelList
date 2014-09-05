@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString *const TableViewCustomCellIdentifier = @"catalogHotelListTableViewCell";
+static NSString *const TableViewCustomCellIdentifier = @"catalogHotelTableViewCell";
 
 
 @interface TableViewICatalogConst : NSObject
