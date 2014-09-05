@@ -98,8 +98,8 @@
     static NSString *CellIdentifier = @"Cell";
     catalogHotelViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    Hotel *hotel = _hotelArray[indexPath.row];
-    
+//    Hotel *hotel = _hotelArray[indexPath.row];
+//    
     return cell;
     
 }

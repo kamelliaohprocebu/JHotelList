@@ -66,6 +66,7 @@
     
     catalogHotelViewController *dvc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"catalogHotelViewController"];
     
+    
     //ナビゲーションコントローラーの機能で画面遷移
     [[self navigationController]pushViewController:dvc2 animated:YES];
 }

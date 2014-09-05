@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B50BA1E619A44578001022D4 /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B50BA1E519A44578001022D4 /* JHotelList.sqlite */; };
 		B51E6D1019AEBD4A006D8625 /* catalogHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */; };
 		B51E6D1419AEBD76006D8625 /* catalogHotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E6D1219AEBD76006D8625 /* catalogHotelTableViewCell.m */; };
 		B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51E6D1319AEBD76006D8625 /* catalogHotelTableViewCell.xib */; };
@@ -50,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B50BA1E519A44578001022D4 /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
+		B5128D4019B802D6002CE09C /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B51E6D0E19AEBD4A006D8625 /* catalogHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelViewController.h; sourceTree = "<group>"; };
 		B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogHotelViewController.m; sourceTree = "<group>"; };
 		B51E6D1119AEBD76006D8625 /* catalogHotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelTableViewCell.h; sourceTree = "<group>"; };
@@ -213,7 +212,7 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B50BA1E519A44578001022D4 /* JHotelList.sqlite */,
+				B5128D4019B802D6002CE09C /* JHotelList.sqlite */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -320,7 +319,6 @@
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
 				B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */,
 				B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */,
-				B50BA1E619A44578001022D4 /* JHotelList.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -140,18 +140,15 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-//    NSLog(@"Tap:%ld",(long)indexPath.row);
     
     HotelListViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelListViewController"];
     
-    //[dvc setCountry:[self.fetchedResultController objectAtIndexPath:[self.CountryTable indexPathForSelectedRow]]];
     [dvc setCountry:_countryArray[indexPath.row]];
     NSLog(@"%@",[self.fetchedResultController objectAtIndexPath:[self.CountryTable indexPathForSelectedRow]]);
     Country *country = _countryArray[indexPath.row];
     NSLog(@"hotels = %@", country.hotel);
 
     
-//    //ナビゲーションコントローラーの機能で画面遷移
     [[self navigationController]pushViewController:dvc animated:YES];
 
     
