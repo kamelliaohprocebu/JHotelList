@@ -36,6 +36,9 @@
 		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
 		B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2B199C4B8F008A9755 /* Country.m */; };
 		B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2D199C4B8F008A9755 /* Hotel.m */; };
+		B5C4A19319BD3DF70076651C /* JHotelList.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = B5C4A19019BD3DF70076651C /* JHotelList.sqlite-shm */; };
+		B5C4A19419BD3DF70076651C /* JHotelList.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = B5C4A19119BD3DF70076651C /* JHotelList.sqlite-wal */; };
+		B5C4A19A19BD4B720076651C /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5C4A19919BD4B720076651C /* JHotelList.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5128D4019B802D6002CE09C /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B51E6D0E19AEBD4A006D8625 /* catalogHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelViewController.h; sourceTree = "<group>"; };
 		B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogHotelViewController.m; sourceTree = "<group>"; };
 		B51E6D1119AEBD76006D8625 /* catalogHotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelTableViewCell.h; sourceTree = "<group>"; };
@@ -95,6 +97,9 @@
 		B5C1EE2B199C4B8F008A9755 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = SOURCE_ROOT; };
 		B5C1EE2C199C4B8F008A9755 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = SOURCE_ROOT; };
 		B5C1EE2D199C4B8F008A9755 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = SOURCE_ROOT; };
+		B5C4A19019BD3DF70076651C /* JHotelList.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JHotelList.sqlite-shm"; path = "../../../../../Downloads/JHotelList.sqlite-shm"; sourceTree = "<group>"; };
+		B5C4A19119BD3DF70076651C /* JHotelList.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "JHotelList.sqlite-wal"; path = "../../../../../Downloads/JHotelList.sqlite-wal"; sourceTree = "<group>"; };
+		B5C4A19919BD4B720076651C /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = JHotelList.sqlite; path = ../../JHotelList.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +217,9 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5128D4019B802D6002CE09C /* JHotelList.sqlite */,
+				B5C4A19919BD4B720076651C /* JHotelList.sqlite */,
+				B5C4A19019BD3DF70076651C /* JHotelList.sqlite-shm */,
+				B5C4A19119BD3DF70076651C /* JHotelList.sqlite-wal */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -314,8 +321,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C4A19419BD3DF70076651C /* JHotelList.sqlite-wal in Resources */,
 				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
+				B5C4A19A19BD4B720076651C /* JHotelList.sqlite in Resources */,
+				B5C4A19319BD3DF70076651C /* JHotelList.sqlite-shm in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
 				B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */,
 				B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */,

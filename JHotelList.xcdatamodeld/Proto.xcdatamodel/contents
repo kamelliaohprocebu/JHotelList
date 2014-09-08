@@ -11,6 +11,7 @@
     </entity>
     <entity name="Hotel" representedClassName="Hotel" syncable="YES">
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,6 +20,6 @@
     <elements>
         <element name="Area" positionX="-810" positionY="-243" width="128" height="73"/>
         <element name="Country" positionX="-605" positionY="-82" width="128" height="88"/>
-        <element name="Hotel" positionX="-333" positionY="90" width="128" height="118"/>
+        <element name="Hotel" positionX="-333" positionY="90" width="128" height="133"/>
     </elements>
 </model>

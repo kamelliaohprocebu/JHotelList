@@ -115,13 +115,32 @@
     }
     
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"JHotelList.sqlite"];
-    NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"JHotelList" ofType:@"sqlite"];
     
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *writed = [ud stringForKey:@"writed"];
+    
+    NSLog(@"%@",writed);
+    
+    //if (!writed){
+    
+    //書き込みもと
+    NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"JHotelList.sqlite"];
+    NSString *writableDBPathShm = [documentsDirectory stringByAppendingPathComponent:@"JHotelList.sqlite-shm"];
+    NSString *writableDBPathWal = [documentsDirectory stringByAppendingPathComponent:@"JHotelList.sqlite-wal"];
+        
+    //読み込みもと
+    NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"JHotelList" ofType:@"sqlite"];
+    NSString *defaultStorePathShm = [[NSBundle mainBundle] pathForResource:@"JHotelList" ofType:@"sqlite-shm"];
+    NSString *defaultStorePathWal = [[NSBundle mainBundle] pathForResource:@"JHotelList" ofType:@"sqlite-wal"];
+    
+    //ファイルのコピー
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    if (defaultStorePath) {
-        [fileManager copyItemAtPath:defaultStorePath toPath:writableDBPath error:NULL];
-    }
+    [fileManager copyItemAtPath:defaultStorePath toPath:writableDBPath error:NULL];
+    [fileManager copyItemAtPath:defaultStorePathShm toPath:writableDBPathShm error:NULL];
+    [fileManager copyItemAtPath:defaultStorePathWal toPath:writableDBPathWal error:NULL];
+        
+    [ud setObject:@"YES" forKey:@"writed"];
+    //}
     
     NSURL *storeUrl = [NSURL fileURLWithPath:[documentsDirectory stringByAppendingPathComponent:@"JHotelList.sqlite"]];
     NSError *error = nil;
@@ -134,10 +153,6 @@
         abort();
     }
 
-
-//        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-//        abort();
-//    }    
     
     return _persistentStoreCoordinator;
 }
