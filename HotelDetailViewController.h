@@ -18,8 +18,9 @@
 
 @property (nonatomic,strong)Area *area;
 @property (nonatomic,strong)Country *country;
-@property (nonatomic,assign)NSInteger hotelindex;
 @property (nonatomic,strong)Hotel *hotel;
+@property (nonatomic,assign)NSInteger hotelindex;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *toshimei;
 @property (weak, nonatomic) IBOutlet UILabel *hotelmei;

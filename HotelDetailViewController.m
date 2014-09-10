@@ -47,10 +47,7 @@
     self.detail.adjustsFontSizeToFitWidth = YES;
     self.detail.numberOfLines = 0;
     self.URL.text = selecthotel.url;
-    
-    
-    
-    
+    self.mail.text = selecthotel.mail;
     
     NSLog(@"%@",self.hotel);
     

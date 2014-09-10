@@ -17,5 +17,6 @@
 @dynamic url;
 @dynamic zipcode;
 @dynamic country;
+@dynamic mail;
 
 @end
