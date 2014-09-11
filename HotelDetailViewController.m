@@ -75,7 +75,7 @@
 
 - (IBAction)tapLabel:(id)sender{
 
-    UILabel *label = (UILabel *)sender;
+    //UILabel *label = (UILabel *)sender;
     NSURL *url = [NSURL URLWithString:self.URL.text];
     [[UIApplication sharedApplication] openURL:url];
 
