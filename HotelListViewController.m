@@ -57,6 +57,20 @@
     
     NSLog(@"%@",_hotelArray);
     
+    for (Hotel *c in _hotelArray) {
+        NSLog(@"順々%@", c.name);
+    }
+    
+    NSArray *hootels = [_hotelArray sortedArrayUsingSelector:@selector(compareNo:)];
+    
+    for (Hotel *c in hotels) {
+        NSLog(@"順番%@", c.name);
+    }
+    
+    _hotelArray = hootels;
+    
+    
+    
     UINib *nib = [UINib nibWithNibName:TableViewCustomCellIdentifier bundle:nil];
     [self.hotelListTable registerNib:nib forCellReuseIdentifier:@"Cell"];
     

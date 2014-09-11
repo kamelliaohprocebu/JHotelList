@@ -42,16 +42,43 @@
     Hotel *selecthotel = self.hotel;
     
     self.toshimei.text = selecthotel.zipcode;
+    
     self.hotelmei.text = selecthotel.name;
+    self.hotelmei.adjustsFontSizeToFitWidth = YES;
+    self.hotelmei.numberOfLines = 0;
+    
     self.detail.text = selecthotel.detail;
     self.detail.adjustsFontSizeToFitWidth = YES;
     self.detail.numberOfLines = 0;
+    
     self.URL.text = selecthotel.url;
+    self.URL.adjustsFontSizeToFitWidth = YES;
+    self.URL.numberOfLines = 0;
+    self.URL.userInteractionEnabled = YES;
+    self.URL.tag = 10;
+
     self.mail.text = selecthotel.mail;
+    self.mail.adjustsFontSizeToFitWidth = YES;
+    self.mail.numberOfLines = 0;
     
     NSLog(@"%@",self.hotel);
-    
-    
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+
+    UITouch *touch = [[event allTouches] anyObject];
+    if (touch.view.tag == self.URL.tag) {
+        [self tapLabel:self.URL];
+    }
+
+}
+
+- (IBAction)tapLabel:(id)sender{
+
+    UILabel *label = (UILabel *)sender;
+    NSURL *url = [NSURL URLWithString:self.URL.text];
+    [[UIApplication sharedApplication] openURL:url];
+
 }
 
 - (void)loadView

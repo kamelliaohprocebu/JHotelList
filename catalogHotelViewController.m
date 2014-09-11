@@ -40,10 +40,12 @@
     [self fetchedResultsController];
     
     _hotelArray = _fetchedResultController.fetchedObjects;
+    _countryArray = _fetchedResultController.fetchedObjects;
     
     NSSet *countries = self.arrea.country;
     _countryArray = [countries allObjects];
     
+    NSLog(@"じじじ%@",_countryArray);
     
     NSLog(@"%@",_hotelArray);
     
@@ -118,12 +120,12 @@
     cell.areamei.adjustsFontSizeToFitWidth = YES;
     cell.areamei.numberOfLines = 0;
     
-    Country *country =  _countryArray[indexPath.row];
-    cell.kunimei.text = country.name;
+    //Country *country =  _countryArray[indexPath.row];
+    cell.kunimei.text = hotel.country.name;
     cell.kunimei.adjustsFontSizeToFitWidth = YES;
     cell.kunimei.numberOfLines = 0;
     
-    NSLog(@"%@",_countryArray);
+    NSLog(@"中身%@",_countryArray);
     
     return cell;
     
@@ -138,8 +140,10 @@
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    catalogHotelViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelDetailViewController"];
-
+    HotelDetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelDetailViewController"];
+    [dvc setHotel:_hotelArray[indexPath.row]];
+    
+    dvc.hotelindex = indexPath.row;
     
     [[self navigationController]pushViewController:dvc animated:YES];
 

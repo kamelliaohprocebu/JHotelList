@@ -43,6 +43,18 @@
     NSSet *countries = self.area.country;
     _countryArray = [countries allObjects];
     
+    for (Country *c in _countryArray) {
+        NSLog(@"順々%@", c.name);
+    }
+    
+    NSArray *coutrys = [_countryArray sortedArrayUsingSelector:@selector(compareNo:)];
+    
+    for (Country *c in coutrys) {
+        NSLog(@"順番%@", c.name);
+    }
+
+    _countryArray = coutrys;
+    
     
 }
 
@@ -103,19 +115,13 @@
     Country *country = _countryArray[indexPath.row];
     cell.textLabel.text = country.name;
     
-//    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES];
-//    NSArray *sortedArray = [_countryArray sortedArrayUsingDescriptors:@[sortDescriptor]];
-//    
-//    NSLog(@"%@",sortedArray);
-    
-    //↑昨日にやっていたわるあがきです。
-    //参考サイト
-    //http://rakuishi.com/archives/5736
+
     
     
     return cell;
     
 }
+
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

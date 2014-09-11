@@ -20,4 +20,23 @@
 @dynamic mail;
 @dynamic no;
 
+- (NSComparisonResult) compareNo:(Hotel*)_hotel {
+    
+    NSInteger s = [self.no integerValue];
+    NSInteger c = [_hotel.no integerValue];
+    
+    NSLog(@"%ld, %ld", (long)s, (long)c);
+    
+    if (s > c) {
+        NSLog(@"%@", @"asc");
+        return NSOrderedDescending;
+    } else if (s < c) {
+        NSLog(@"%@", @"desc");
+        return NSOrderedAscending;
+    } else {
+        return NSOrderedSame;
+    }
+}
+
+
 @end
