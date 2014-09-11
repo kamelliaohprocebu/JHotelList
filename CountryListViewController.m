@@ -108,6 +108,11 @@
 //    
 //    NSLog(@"%@",sortedArray);
     
+    //↑昨日にやっていたわるあがきです。
+    //参考サイト
+    //http://rakuishi.com/archives/5736
+    
+    
     return cell;
     
 }
