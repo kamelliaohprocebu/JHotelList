@@ -18,5 +18,6 @@
 @dynamic zipcode;
 @dynamic country;
 @dynamic mail;
+@dynamic no;
 
 @end

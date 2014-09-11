@@ -41,13 +41,14 @@
     
     _hotelArray = _fetchedResultController.fetchedObjects;
     
+    NSSet *countries = self.arrea.country;
+    _countryArray = [countries allObjects];
+    
     
     NSLog(@"%@",_hotelArray);
     
     UINib *nib = [UINib nibWithNibName:TableViewCustomCellIdentifier bundle:nil];
     [self.catalogTable registerNib:nib forCellReuseIdentifier:@"Cell"];
-    
-    
     
 }
 
@@ -74,7 +75,7 @@
     [fetchRequest setEntity:entityDescription]; // エンティティの情報を指定している
     //    [fetchRequest setFetchBatchSize:0];         // 一度に取得するデータ件数を指定している（０は無限）
     [fetchRequest setSortDescriptors:
-     [[NSArray alloc] initWithObjects:[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES], nil]];    // 順序の指定をしている
+     [[NSArray alloc] initWithObjects:[[NSSortDescriptor alloc] initWithKey:@"no" ascending:YES], nil]];    // 順序の指定をしている
     
     NSFetchedResultsController *localFetchedResultController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
@@ -113,10 +114,16 @@
     cell.hotelmei.adjustsFontSizeToFitWidth = YES;
     cell.hotelmei.numberOfLines = 0;
     
-
-    cell.kunimei.text = hotel.zipcode;
+    cell.areamei.text = hotel.zipcode;
+    cell.areamei.adjustsFontSizeToFitWidth = YES;
+    cell.areamei.numberOfLines = 0;
+    
+    Country *country =  _countryArray[indexPath.row];
+    cell.kunimei.text = country.name;
     cell.kunimei.adjustsFontSizeToFitWidth = YES;
     cell.kunimei.numberOfLines = 0;
+    
+    NSLog(@"%@",_countryArray);
     
     return cell;
     

@@ -40,23 +40,9 @@
     self.CountryTable.delegate = self;
     [self fetchedResultsController];
     
-    
-    
     NSSet *countries = self.area.country;
     _countryArray = [countries allObjects];
     
-    
-    
-    //    for (Country *country in countries) {
-    //        NSLog(@"country=%@",country);
-    //    }
-   
-    
-    
-//    [text appendString:@"name: "];
-    
-    
-
     
 }
 
@@ -82,7 +68,7 @@
     [fetchRequest setEntity:entityDescription]; // エンティティの情報を指定している
     //    [fetchRequest setFetchBatchSize:0];         // 一度に取得するデータ件数を指定している（０は無限）
     [fetchRequest setSortDescriptors:
-     [[NSArray alloc] initWithObjects:[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES], nil]];    // 順序の指定をしている
+     [[NSArray alloc] initWithObjects:[[NSSortDescriptor alloc] initWithKey:@"no" ascending:YES], nil]];    // 順序の指定をしている
     
     NSFetchedResultsController *localFetchedResultController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
@@ -114,27 +100,23 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    //    NSManagedObject *managedObject = [_fetchedResultController objectAtIndexPath:indexPath];
-    //    cell.textLabel.text = [managedObject valueForKey:@"name"];
-    //    return cell;
-    
-//    Country *country = [_fetchedResultController objectAtIndexPath:indexPath];
-//    cell.textLabel.text = country.name;
-//    
-    //    area.country
     Country *country = _countryArray[indexPath.row];
     cell.textLabel.text = country.name;
+    
+//    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES];
+//    NSArray *sortedArray = [_countryArray sortedArrayUsingDescriptors:@[sortDescriptor]];
+//    
+//    NSLog(@"%@",sortedArray);
+    
     return cell;
     
 }
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _countryArray.count;
     //    return [_fetchedResultController.fetchedObjects count];
-    
-    
-    
-    
     
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

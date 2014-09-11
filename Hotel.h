@@ -18,6 +18,7 @@
 @property (nonatomic, retain) NSString * url;
 @property (nonatomic, retain) NSString * zipcode;
 @property (nonatomic, retain) NSString * mail;
+@property (nonatomic, retain) NSNumber * no;
 @property (nonatomic, retain) Country *country;
 
 @end

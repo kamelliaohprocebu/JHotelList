@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *country;
+@property (nonatomic, retain) NSNumber *no;
 @end
 
 @interface Area (CoreDataGeneratedAccessors)

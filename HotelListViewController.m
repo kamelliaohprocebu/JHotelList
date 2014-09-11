@@ -24,6 +24,14 @@
 
 @end
 
+@interface Book : NSObject{
+
+    NSNumber *no;
+}
+
+@end
+
+
 @implementation HotelListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,8 +51,6 @@
     self.hotelListTable.dataSource = self;
     self.hotelListTable.delegate = self;
     [self fetchedResultsController];
-    
-    
     
     NSSet *hotels = self.country.hotel;
     _hotelArray = [hotels allObjects];
@@ -119,6 +125,11 @@
     return cell;
     
 }
+
+
+
+    
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _hotelArray.count;

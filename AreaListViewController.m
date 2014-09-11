@@ -34,11 +34,6 @@
     self.areaListTable.delegate = self;
     [self fetchedResultsController];
     
-//    self.areaListTable.backgroundColor = [UIColor blueColor];
-//    self.areaListTable.rowHeight = 70;
-//    
-    
-
 }
 
 - (void)loadView
@@ -62,7 +57,7 @@
     [fetchRequest setEntity:entityDescription]; // エンティティの情報を指定している
     //    [fetchRequest setFetchBatchSize:0];         // 一度に取得するデータ件数を指定している（０は無限）
     [fetchRequest setSortDescriptors:
-     [[NSArray alloc] initWithObjects:[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES], nil]];    // 順序の指定をしている
+     [[NSArray alloc] initWithObjects:[[NSSortDescriptor alloc] initWithKey:@"no" ascending:YES], nil]];    // 順序の指定をしている
     
     NSFetchedResultsController *localFetchedResultController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
@@ -94,17 +89,10 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-//    NSManagedObject *managedObject = [_fetchedResultController objectAtIndexPath:indexPath];
-//    cell.textLabel.text = [managedObject valueForKey:@"name"];
-//    return cell;
 
     Area *area = [_fetchedResultController objectAtIndexPath:indexPath];
     cell.textLabel.text = area.name;
-    ;
     
-//    area.country
-    
-        
     return cell;
 
 }

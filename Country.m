@@ -14,5 +14,6 @@
 @dynamic name;
 @dynamic hotel;
 @dynamic area;
+@dynamic no;
 
 @end

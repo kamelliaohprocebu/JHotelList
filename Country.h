@@ -13,6 +13,7 @@
 @interface Country : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber *no;
 @property (nonatomic, retain) NSSet *hotel;
 @property (nonatomic, retain) NSManagedObject *area;
 @end

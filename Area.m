@@ -14,5 +14,6 @@
 
 @dynamic name;
 @dynamic country;
+@dynamic no;
 
 @end
