@@ -28,6 +28,7 @@ UITableViewDelegate, NSFetchedResultsControllerDelegate>
 @property (nonatomic,strong)Hotel *hootel;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+- (IBAction)homeBtn:(id)sender;
 
 
 

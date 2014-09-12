@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *areaListTable;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+- (IBAction)homebtn:(id)sender;
 
 
 

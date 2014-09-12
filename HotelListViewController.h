@@ -22,6 +22,7 @@ UITableViewDelegate, NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *hotelListTable;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+- (IBAction)homeBtn:(id)sender;
 
 
 

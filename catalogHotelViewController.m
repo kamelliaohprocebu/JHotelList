@@ -45,7 +45,7 @@
     NSSet *countries = self.arrea.country;
     _countryArray = [countries allObjects];
     
-    NSLog(@"じじじ%@",_countryArray);
+    NSLog(@"じじ%@",_countryArray);
     
     NSLog(@"%@",_hotelArray);
     
@@ -158,5 +158,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)homeBtn:(id)sender {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 @end
 

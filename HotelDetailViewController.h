@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *detail;
 @property (weak, nonatomic) IBOutlet UILabel *mail;
 @property (weak, nonatomic) IBOutlet UILabel *URL;
+- (IBAction)homeBtn:(id)sender;
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
