@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TopViewController : UIViewController
+
 - (IBAction)btn:(id)sender;
 - (IBAction)btn2:(id)sender;
-
 
 @end

@@ -16,6 +16,7 @@
 
 @implementation TopViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,7 +31,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"JHotelList";
+    self.title = NSLocalizedString(@"JHotelList", nil);
+    self.navigationItem.title = self.title;
+    self.navigationController.navigationBar.translucent = YES;
+    
 
 }
 
@@ -57,7 +61,10 @@
     
     //ナビゲーションコントローラーの機能で画面遷移
     [[self navigationController]pushViewController:dvc animated:YES];
+    
+        
 
+    
     
     //[self.btn setTitle : @"国から選ぶ" forState : UIControlStateNormal];
 }

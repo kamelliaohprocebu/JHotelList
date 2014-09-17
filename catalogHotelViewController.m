@@ -15,6 +15,7 @@
 {
     NSArray *_countryArray;
     NSArray *_hotelArray;
+    NSArray *sectionList;
 }
 
 @end
@@ -52,7 +53,116 @@
     UINib *nib = [UINib nibWithNibName:TableViewCustomCellIdentifier bundle:nil];
     [self.catalogTable registerNib:nib forCellReuseIdentifier:@"Cell"];
     
+    //sectionList = [NSArray arrayWithObjects:@"",@"",@"",@"",@"",@"",@"",@"",@"",nil];
+    
+    
 }
+
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//    return 8;
+//
+//}
+//
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return [sectionList objectAtIndex:section];
+//    
+//    
+//    NSString *result = [[NSString alloc] init];
+//    
+//    switch (section) {
+//        case 0:
+//            //アジア28項目(1-28)
+//            result = @"アジア";
+//            break;
+//        case 1:
+//            //アフリカ7項目(29-35)
+//            result = @"アフリカ";
+//            break;
+//        case 2:
+//            //北米25項目(36-60)
+//            result = @"北米";
+//            break;
+//        case 3:
+//            //ヨーロッパ39項目(60-99)
+//            result = @"ヨーロッパ";
+//            break;
+//        case 4:
+//            //中東2項目(100-101)
+//            result = @"中東";
+//            break;
+//        case 5:
+//            //南米4項目(102-105)
+//            result = @"南米";
+//            break;
+//        case 6:
+//            //オセアニア12項目(106-117)
+//            result = @"オセアニア";
+//            break;
+//        case 7:
+//            //中米9項目(118-126)
+//            result = @"中米";
+//            break;
+//        default:
+//            break;
+//    }
+//    
+//    return result;
+//
+//    
+//
+//}
+//
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+  //
+    
+//
+//    NSInteger result = 0;
+//    
+//    switch (section) {
+//        case 0:
+//            //アジア28項目(1-28)
+//            result = 28;
+//            break;
+//        case 1:
+//            //アフリカ7項目(29-35)
+//            result = 7;
+//            break;
+//        case 2:
+//            //北米25項目(36-60)
+//            result = 25;
+//            break;
+//        case 3:
+//            //ヨーロッパ39項目(60-99)
+//            result = 39;
+//            break;
+//        case 4:
+//            //中東2項目(100-101)
+//            result = 2;
+//            break;
+//        case 5:
+//            //南米4項目(102-105)
+//            result = 4;
+//            break;
+//        case 6:
+//            //オセアニア12項目(106-117)
+//            result = 12;
+//            break;
+//        case 7:
+//            //中米9項目(118-126)
+//            result = 9;
+//            break;
+//        default:
+//            break;
+//    }
+//
+//    return result;
+//    
+//}
+
 
 - (void)loadView
 {
@@ -108,6 +218,47 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+//    NSInteger result;
+//    switch (indexPath.section) {
+//        case 0:
+//            //アジア28項目(1-28)
+//            result = 0;
+//            break;
+//        case 1:
+//            //アフリカ7項目(29-35)
+//            result = 28;
+//            break;
+//        case 2:
+//            //北米25項目(36-60)
+//            result = 35;
+//            break;
+//        case 3:
+//            //ヨーロッパ39項目(60-99)
+//            result = 59;
+//            break;
+//        case 4:
+//            //中東2項目(100-101)
+//            result = 99;
+//            break;
+//        case 5:
+//            //南米4項目(102-105)
+//            result = 101;
+//            break;
+//        case 6:
+//            //オセアニア12項目(106-117)
+//            result = 105;
+//            break;
+//        case 7:
+//            //中米9項目(118-126)
+//            result = 117;
+//            break;
+//        default:
+//            break;
+//    }
+//
+    
+    
     static NSString *CellIdentifier = @"Cell";
     catalogHotelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -136,6 +287,7 @@
 {
     return _hotelArray.count;
     //    return [_fetchedResultController.fetchedObjects count];
+    //NSString *sectionName = [sectionList objectAtIndex:section];
     
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -147,6 +299,16 @@
     
     [[self navigationController]pushViewController:dvc animated:YES];
 
+    
+    
+}
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0 || indexPath.row%2 == 0) {
+        UIColor *altCellColor = [UIColor colorWithWhite:0.7 alpha:0.1];
+        cell.backgroundColor = altCellColor;
+    }
+    
     
     
 }
