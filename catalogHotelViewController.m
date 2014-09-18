@@ -16,6 +16,7 @@
     NSArray *_countryArray;
     NSArray *_hotelArray;
     NSArray *sectionList;
+    NSMutableArray *searchData;
 }
 
 @end
@@ -52,6 +53,19 @@
     
     UINib *nib = [UINib nibWithNibName:TableViewCustomCellIdentifier bundle:nil];
     [self.catalogTable registerNib:nib forCellReuseIdentifier:@"Cell"];
+    
+    
+    //検索バー設置
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44.0f)];
+    
+    UISearchDisplayController *searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+    searchDisplayController.delegate = self;
+    searchDisplayController.searchResultsDelegate = self;
+    searchDisplayController.searchResultsDataSource = self;
+    self.catalogTable.tableHeaderView = searchBar;
+    
+    searchData = [NSMutableArray arrayWithCapacity:_hotelArray.count];
+    
     
     //sectionList = [NSArray arrayWithObjects:@"",@"",@"",@"",@"",@"",@"",@"",@"",nil];
     
@@ -278,6 +292,18 @@
     
     NSLog(@"中身%@",_countryArray);
     
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    }
+//    
+    
+    if(tableView == self.searchDisplayController.searchResultsTableView)
+        cell.textLabel.text = [searchData objectAtIndex:indexPath.row];
+    else
+        cell.textLabel.text = [_hotelArray objectAtIndex:indexPath.row];
+    
+    
     return cell;
     
     
@@ -289,7 +315,34 @@
     //    return [_fetchedResultController.fetchedObjects count];
     //NSString *sectionName = [sectionList objectAtIndex:section];
     
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+        return searchData.count;
+    {
+        return _hotelArray;
+    }
+    
+    
 }
+
+- (void)filterContentForSearchText:(NSString*)searchString scope:(NSString*)scope {
+    [searchData removeAllObjects];
+    
+    for(NSString *label in _hotelArray) {
+        NSRange range = [label rangeOfString:searchString
+                                     options:NSCaseInsensitiveSearch];
+        if(range.length > 0)
+            [searchData addObject:label];
+    }
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController*)controller shouldReloadTableForSearchString:(NSString*)searchString {
+    [self filterContentForSearchText: searchString
+                               scope: [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    return YES;
+}
+
+
+
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HotelDetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"HotelDetailViewController"];

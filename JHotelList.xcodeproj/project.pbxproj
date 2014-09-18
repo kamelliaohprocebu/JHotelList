@@ -39,7 +39,6 @@
 		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
 		B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2B199C4B8F008A9755 /* Country.m */; };
 		B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2D199C4B8F008A9755 /* Hotel.m */; };
-		B5F2D87819C7E6C00029F4E6 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5F2D87719C7E6C00029F4E6 /* bg1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +100,6 @@
 		B5C1EE2B199C4B8F008A9755 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = SOURCE_ROOT; };
 		B5C1EE2C199C4B8F008A9755 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = SOURCE_ROOT; };
 		B5C1EE2D199C4B8F008A9755 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = SOURCE_ROOT; };
-		B5F2D87719C7E6C00029F4E6 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg1.jpg; path = "../../../../Desktop/DKLiveBlur-master/LiveBlur/LiveBlur/Images/bg1.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +153,6 @@
 		B5985830199AFFBB000A62DF = {
 			isa = PBXGroup;
 			children = (
-				B5F2D87619C7E69C0029F4E6 /* image */,
 				B504267019AC3BBB006C9223 /* hotelListTableView */,
 				B51E6D1619AEBE93006D8625 /* catalogHotelTableView */,
 				B51E6D0E19AEBD4A006D8625 /* catalogHotelViewController.h */,
@@ -249,14 +246,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5F2D87619C7E69C0029F4E6 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				B5F2D87719C7E6C00029F4E6 /* bg1.jpg */,
-			);
-			name = image;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,7 +327,6 @@
 				B501F38019C67E5000E9A99E /* JHotelList.sqlite in Resources */,
 				B524A2C119C28726007EE444 /* JHotelList.sqlite-wal in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
-				B5F2D87819C7E6C00029F4E6 /* bg1.jpg in Resources */,
 				B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */,
 				B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */,
 			);

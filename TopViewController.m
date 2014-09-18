@@ -35,8 +35,11 @@
     self.navigationItem.title = self.title;
     self.navigationController.navigationBar.translucent = YES;
     
+    
+    
 
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -62,11 +65,9 @@
     //ナビゲーションコントローラーの機能で画面遷移
     [[self navigationController]pushViewController:dvc animated:YES];
     
-        
-
-    
-    
     //[self.btn setTitle : @"国から選ぶ" forState : UIControlStateNormal];
+    
+    
 }
 
 - (IBAction)btn2:(id)sender {

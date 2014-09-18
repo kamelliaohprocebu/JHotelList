@@ -21,7 +21,8 @@
 
 
 @interface catalogHotelViewController : UIViewController<UITableViewDataSource,
-UITableViewDelegate, NSFetchedResultsControllerDelegate>
+UITableViewDelegate, NSFetchedResultsControllerDelegate,UISearchBarDelegate,UISearchDisplayDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *catalogTable;
 @property (nonatomic,strong)Area *arrea;
 @property (nonatomic,strong)Country *coountry;
@@ -29,6 +30,8 @@ UITableViewDelegate, NSFetchedResultsControllerDelegate>
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 - (IBAction)homeBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
 
 
 
