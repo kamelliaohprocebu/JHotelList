@@ -24,7 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *toshimei;
 @property (weak, nonatomic) IBOutlet UILabel *hotelmei;
-@property (weak, nonatomic) IBOutlet UILabel *detail;
+@property (weak, nonatomic) IBOutlet UITextView *detail;
 @property (weak, nonatomic) IBOutlet UILabel *mail;
 @property (weak, nonatomic) IBOutlet UILabel *URL;
 - (IBAction)homeBtn:(id)sender;

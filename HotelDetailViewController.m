@@ -48,8 +48,8 @@
     self.hotelmei.numberOfLines = 0;
     
     self.detail.text = selecthotel.detail;
-    self.detail.adjustsFontSizeToFitWidth = YES;
-    self.detail.numberOfLines = 0;
+//    self.detail.adjustsFontSizeToFitWidth = YES;
+//    self.detail.numberOfLines = 0;
     
     self.URL.text = selecthotel.url;
     self.URL.adjustsFontSizeToFitWidth = YES;

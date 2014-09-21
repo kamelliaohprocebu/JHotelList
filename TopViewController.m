@@ -9,6 +9,7 @@
 #import "TopViewController.h"
 #import "AreaListViewController.h"
 #import "catalogHotelViewController.h"
+#import "UIBarButtonItem+FlatUI.h"
 
 @interface TopViewController ()
 
@@ -35,9 +36,8 @@
     self.navigationItem.title = self.title;
     self.navigationController.navigationBar.translucent = YES;
     
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor blueColor] highlightedColor:[UIColor blueColor] cornerRadius:0];
     
-    
-
 }
 
 
@@ -66,6 +66,7 @@
     [[self navigationController]pushViewController:dvc animated:YES];
     
     //[self.btn setTitle : @"国から選ぶ" forState : UIControlStateNormal];
+    
     
     
 }

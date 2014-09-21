@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B501F38019C67E5000E9A99E /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B501F37F19C67E5000E9A99E /* JHotelList.sqlite */; };
+		B50951C519CF108C00132E28 /* JHotelList.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */; };
+		B50951C619CF108C00132E28 /* JHotelList.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */; };
 		B51E6D1019AEBD4A006D8625 /* catalogHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */; };
 		B51E6D1419AEBD76006D8625 /* catalogHotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E6D1219AEBD76006D8625 /* catalogHotelTableViewCell.m */; };
 		B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51E6D1319AEBD76006D8625 /* catalogHotelTableViewCell.xib */; };
-		B524A2C019C28726007EE444 /* JHotelList.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = B524A2BE19C28726007EE444 /* JHotelList.sqlite-shm */; };
-		B524A2C119C28726007EE444 /* JHotelList.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = B524A2BF19C28726007EE444 /* JHotelList.sqlite-wal */; };
 		B529804A19A2E3E40074B892 /* HotelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B529804919A2E3E40074B892 /* HotelListViewController.m */; };
 		B52B00C919AC239D00CD4AEC /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B00C819AC239D00CD4AEC /* HotelDetailViewController.m */; };
 		B544A5C119A6E65C004ABD99 /* hotelListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */; };
@@ -39,6 +39,8 @@
 		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
 		B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2B199C4B8F008A9755 /* Country.m */; };
 		B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2D199C4B8F008A9755 /* Hotel.m */; };
+		B5E054B319CA99C800F91F9F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E054B219CA99C800F91F9F /* CoreText.framework */; };
+		B5E054B519CAA35E00F91F9F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E054B219CA99C800F91F9F /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53CEA755E4F6488C88B16137 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		8019E4CE15BA48F8BE08D565 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B501F37F19C67E5000E9A99E /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
+		B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JHotelList.sqlite-shm"; sourceTree = SOURCE_ROOT; };
+		B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JHotelList.sqlite-wal"; sourceTree = SOURCE_ROOT; };
 		B51E6D0E19AEBD4A006D8625 /* catalogHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelViewController.h; sourceTree = "<group>"; };
 		B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogHotelViewController.m; sourceTree = "<group>"; };
 		B51E6D1119AEBD76006D8625 /* catalogHotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelTableViewCell.h; sourceTree = "<group>"; };
 		B51E6D1219AEBD76006D8625 /* catalogHotelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogHotelTableViewCell.m; sourceTree = "<group>"; };
 		B51E6D1319AEBD76006D8625 /* catalogHotelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = catalogHotelTableViewCell.xib; sourceTree = "<group>"; };
 		B51E6D1719AED01B006D8625 /* TableViewICatalogConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewICatalogConst.h; sourceTree = "<group>"; };
-		B524A2BE19C28726007EE444 /* JHotelList.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JHotelList.sqlite-shm"; path = "../../JHotelList.sqlite-shm"; sourceTree = "<group>"; };
-		B524A2BF19C28726007EE444 /* JHotelList.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "JHotelList.sqlite-wal"; path = "../../JHotelList.sqlite-wal"; sourceTree = "<group>"; };
 		B529804819A2E3E40074B892 /* HotelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelListViewController.h; sourceTree = "<group>"; };
 		B529804919A2E3E40074B892 /* HotelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelListViewController.m; sourceTree = "<group>"; };
 		B52B00C719AC239D00CD4AEC /* HotelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailViewController.h; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		B5C1EE2B199C4B8F008A9755 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = SOURCE_ROOT; };
 		B5C1EE2C199C4B8F008A9755 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = SOURCE_ROOT; };
 		B5C1EE2D199C4B8F008A9755 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = SOURCE_ROOT; };
+		B5E054B219CA99C800F91F9F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E054B519CAA35E00F91F9F /* CoreText.framework in Frameworks */,
 				B598583F199AFFBB000A62DF /* CoreGraphics.framework in Frameworks */,
 				B5985843199AFFBC000A62DF /* CoreData.framework in Frameworks */,
 				B5985841199AFFBB000A62DF /* UIKit.framework in Frameworks */,
@@ -118,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E054B319CA99C800F91F9F /* CoreText.framework in Frameworks */,
 				B598585B199AFFBC000A62DF /* XCTest.framework in Frameworks */,
 				B598585E199AFFBC000A62DF /* CoreData.framework in Frameworks */,
 				B598585D199AFFBC000A62DF /* UIKit.framework in Frameworks */,
@@ -172,6 +179,7 @@
 				B5985861199AFFBC000A62DF /* JHotelListTests */,
 				B598583B199AFFBB000A62DF /* Frameworks */,
 				B598583A199AFFBB000A62DF /* Products */,
+				53CEA755E4F6488C88B16137 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,11 +195,13 @@
 		B598583B199AFFBB000A62DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5E054B219CA99C800F91F9F /* CoreText.framework */,
 				B598583C199AFFBB000A62DF /* Foundation.framework */,
 				B598583E199AFFBB000A62DF /* CoreGraphics.framework */,
 				B5985840199AFFBB000A62DF /* UIKit.framework */,
 				B5985842199AFFBC000A62DF /* CoreData.framework */,
 				B598585A199AFFBC000A62DF /* XCTest.framework */,
+				8019E4CE15BA48F8BE08D565 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,9 +227,9 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */,
+				B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */,
 				B501F37F19C67E5000E9A99E /* JHotelList.sqlite */,
-				B524A2BE19C28726007EE444 /* JHotelList.sqlite-shm */,
-				B524A2BF19C28726007EE444 /* JHotelList.sqlite-wal */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -253,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B598586B199AFFBC000A62DF /* Build configuration list for PBXNativeTarget "JHotelList" */;
 			buildPhases = (
+				6F39D0D800CA41ABAB8CD867 /* Check Pods Manifest.lock */,
 				B5985835199AFFBB000A62DF /* Sources */,
 				B5985836199AFFBB000A62DF /* Frameworks */,
 				B5985837199AFFBB000A62DF /* Resources */,
+				177113EC08C84FD8968444D8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,11 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50951C619CF108C00132E28 /* JHotelList.sqlite-wal in Resources */,
 				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
-				B524A2C019C28726007EE444 /* JHotelList.sqlite-shm in Resources */,
 				B501F38019C67E5000E9A99E /* JHotelList.sqlite in Resources */,
-				B524A2C119C28726007EE444 /* JHotelList.sqlite-wal in Resources */,
+				B50951C519CF108C00132E28 /* JHotelList.sqlite-shm in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
 				B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */,
 				B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */,
@@ -341,6 +353,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		177113EC08C84FD8968444D8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F39D0D800CA41ABAB8CD867 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5985835199AFFBB000A62DF /* Sources */ = {
@@ -474,6 +519,7 @@
 		};
 		B598586C199AFFBC000A62DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CEA755E4F6488C88B16137 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -487,6 +533,7 @@
 		};
 		B598586D199AFFBC000A62DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CEA755E4F6488C88B16137 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
