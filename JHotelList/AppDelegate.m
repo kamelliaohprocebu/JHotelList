@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "UIBarButtonItem+FlatUI.h"
+#import "UIColor+FlatUI.h"
 
 
 @implementation AppDelegate
@@ -29,6 +31,8 @@
     NSArray *fetchObjects = [context executeFetchRequest:fetchRequest error:&error];
     
     NSLog(@"%@",fetchObjects);
+    
+    
     
     
     

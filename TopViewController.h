@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FUIButton.h"
 
 @interface TopViewController : UIViewController
 
 - (IBAction)btn:(id)sender;
 - (IBAction)btn2:(id)sender;
+@property (weak, nonatomic) IBOutlet FUIButton *myButton;
+@property (weak, nonatomic) IBOutlet FUIButton *myButton1;
 
 @end

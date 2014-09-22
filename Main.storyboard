@@ -76,7 +76,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kM9-Vb-fRT" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="0.0" y="64" width="320" height="245"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.020828481741776317" green="0.91421240043344554" blue="1" alpha="0.64000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="国から選ぶ">
@@ -94,7 +93,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="do7-aV-ZU5">
                                 <rect key="frame" x="0.0" y="308" width="320" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.19275085295129979" green="1" blue="0.0" alpha="0.77000000000000002" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="一覧から選ぶ">
@@ -113,6 +111,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="hXz-uR-N3H"/>
+                    <connections>
+                        <outlet property="myButton" destination="kM9-Vb-fRT" id="YyN-Mo-Wkh"/>
+                        <outlet property="myButton1" destination="do7-aV-ZU5" id="foY-jQ-4OB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3l-vm-M1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

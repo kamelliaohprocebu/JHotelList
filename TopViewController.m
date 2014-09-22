@@ -10,6 +10,11 @@
 #import "AreaListViewController.h"
 #import "catalogHotelViewController.h"
 #import "UIBarButtonItem+FlatUI.h"
+#import "UIColor+FlatUI.h"
+#import "FUIButton.h"
+#import "UIFont+FlatUI.h"
+#import "UIImage+FlatUI.h"
+
 
 @interface TopViewController ()
 
@@ -36,7 +41,20 @@
     self.navigationItem.title = self.title;
     self.navigationController.navigationBar.translucent = YES;
     
-    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor blueColor] highlightedColor:[UIColor blueColor] cornerRadius:0];
+    // ボタンの色
+    self.myButton.buttonColor = [UIColor turquoiseColor];
+    // ボタンのシャドー色
+    self.myButton.shadowColor = [UIColor greenSeaColor];
+    // ボタンのシャドー高度
+    self.myButton.shadowHeight = 3.0f;
+    // ボタンの角丸みの半径
+    self.myButton.cornerRadius = 6.0f;
+    // ボタンの文字ファンド
+    self.myButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    // 通常状態の文字色
+    [self.myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    // ハイライト状態の文字色
+    [self.myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
 }
 
@@ -65,8 +83,8 @@
     //ナビゲーションコントローラーの機能で画面遷移
     [[self navigationController]pushViewController:dvc animated:YES];
     
-    //[self.btn setTitle : @"国から選ぶ" forState : UIControlStateNormal];
     
+        
     
     
 }

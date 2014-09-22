@@ -115,7 +115,7 @@
     
     // noto ADD start
     // セクション数
-    NSLog(@"%d", _AreaArray.count);
+    NSLog(@"%lu", (unsigned long)_AreaArray.count);
     return _AreaArray.count;
     // noto ADD end
     
