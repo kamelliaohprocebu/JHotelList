@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>837DD620-C007-4A00-B39C-8872A10D5C65</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JHotelList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8D4384F2-D6FD-4023-91A1-354EDF83FA78</key>
+		<string>https://github.com/kamelliaohprocebu/JHotelList.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JHotelList.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8D4384F2-D6FD-4023-91A1-354EDF83FA78</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kamelliaohprocebu/JHotelList.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8D4384F2-D6FD-4023-91A1-354EDF83FA78</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8D4384F2-D6FD-4023-91A1-354EDF83FA78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JHotelList</string>
+		</dict>
+	</array>
+</dict>
+</plist>
