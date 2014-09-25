@@ -9,6 +9,17 @@
 #import "AreaListViewController.h"
 #import "Area.h"
 #import "CountryListViewController.h"
+#import "UITableViewCell+FlatUI.h"
+#import "FUICellBackgroundView.h"
+#import <objc/runtime.h>
+#import "UIBarButtonItem+FlatUI.h"
+#import "UIColor+FlatUI.h"
+#import "FUIButton.h"
+#import "UIFont+FlatUI.h"
+#import "UIImage+FlatUI.h"
+#import "UITableViewCell+FlatUI.h"
+#import "FUICellBackgroundView.h"
+
 
 @interface AreaListViewController ()
 
@@ -122,13 +133,18 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0 || indexPath.row%2 == 0) {
-        UIColor *altCellColor = [UIColor colorWithWhite:0.7 alpha:0.1];
-        cell.backgroundColor = altCellColor;
-    }
-
+//    if (indexPath.row == 0 || indexPath.row%2 == 0) {
+//        UIColor *altCellColor = [UIColor colorWithWhite:0.7 alpha:0.1];
+//        cell.backgroundColor = altCellColor;
+//    }
+//    [cell configureFlatCellWithColor:[UIColor greenSeaColor]
+//                       selectedColor:[UIColor cloudsColor]];
+//    
+//    cell.cornerRadius = 5.0f; // optional
+//    cell.separatorHeight = 2.0f; // optional
     
     
+     
 }
 
 - (void)didReceiveMemoryWarning
@@ -151,6 +167,7 @@
 - (IBAction)homebtn:(id)sender {
     
     [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     
 }
 @end

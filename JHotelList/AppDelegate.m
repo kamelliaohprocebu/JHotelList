@@ -32,13 +32,20 @@
     
     NSLog(@"%@",fetchObjects);
     
-    
-    
-    
-    
-    
+    //3.5inchと4inchを読み分けする
+    CGRect rect = [UIScreen mainScreen].bounds;
+    if (rect.size.height == 480) {
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"3_5inch" bundle:nil];
+        UIViewController* rootViewController = [storyboard instantiateInitialViewController];
+        
+        self.window.rootViewController = rootViewController;
+    }
+        
+
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

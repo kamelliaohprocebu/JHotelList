@@ -91,15 +91,15 @@
     [self.catalogTable registerNib:nib forCellReuseIdentifier:@"Cell"];
     
     
-    //検索バー設置
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44.0f)];
-    searchBar.delegate = self;
-    self.catalogTable.tableHeaderView = searchBar;
-    
-    UISearchDisplayController *searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
-    searchDisplayController.delegate = self;
-    searchDisplayController.searchResultsDelegate = self;
-    searchDisplayController.searchResultsDataSource = self;
+//    //検索バー設置
+//    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44.0f)];
+//    searchBar.delegate = self;
+//    self.catalogTable.tableHeaderView = searchBar;
+//    
+//    UISearchDisplayController *searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+//    searchDisplayController.delegate = self;
+//    searchDisplayController.searchResultsDelegate = self;
+//    searchDisplayController.searchResultsDataSource = self;
     
     //    searchData = [NSMutableArray arrayWithCapacity:_hotelArray.count];
     
@@ -382,7 +382,7 @@
     NSLog(@"%@", searchBar.text);
     [searchBar resignFirstResponder];
     
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Country" inManagedObjectContext:_managedObjectContext];
+//    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Country" inManagedObjectContext:_managedObjectContext];
     
     
     

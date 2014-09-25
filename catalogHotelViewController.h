@@ -14,6 +14,7 @@
 #import "Hotel.h"
 #import "TableViewICatalogConst.h"
 #import "catalogHotelTableViewCell.h"
+#import "FlatUIKit.h"
 
 @class Area;
 @class Country;

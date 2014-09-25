@@ -48,6 +48,7 @@
     self.hotelmei.numberOfLines = 0;
     
     self.detail.text = selecthotel.detail;
+    self.detail.editable = NO;
 //    self.detail.adjustsFontSizeToFitWidth = YES;
 //    self.detail.numberOfLines = 0;
     

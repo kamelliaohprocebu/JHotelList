@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B501F38019C67E5000E9A99E /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B501F37F19C67E5000E9A99E /* JHotelList.sqlite */; };
+		B50777DB19D26360006CEC0D /* 3_5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50777DA19D26360006CEC0D /* 3_5inch.storyboard */; };
 		B50951C519CF108C00132E28 /* JHotelList.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */; };
 		B50951C619CF108C00132E28 /* JHotelList.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */; };
 		B51E6D1019AEBD4A006D8625 /* catalogHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E6D0F19AEBD4A006D8625 /* catalogHotelViewController.m */; };
@@ -39,6 +40,7 @@
 		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
 		B5C1EE2F199C4B8F008A9755 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2B199C4B8F008A9755 /* Country.m */; };
 		B5C1EE30199C4B8F008A9755 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE2D199C4B8F008A9755 /* Hotel.m */; };
+		B5C7522F19CFCD20005A2B04 /* libPods-FlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C7522E19CFCD20005A2B04 /* libPods-FlatUIKit.a */; };
 		B5E054B319CA99C800F91F9F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E054B219CA99C800F91F9F /* CoreText.framework */; };
 		B5E054B519CAA35E00F91F9F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E054B219CA99C800F91F9F /* CoreText.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,7 @@
 		53CEA755E4F6488C88B16137 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8019E4CE15BA48F8BE08D565 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B501F37F19C67E5000E9A99E /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
+		B50777DA19D26360006CEC0D /* 3_5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3_5inch.storyboard; sourceTree = "<group>"; };
 		B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JHotelList.sqlite-shm"; sourceTree = SOURCE_ROOT; };
 		B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JHotelList.sqlite-wal"; sourceTree = SOURCE_ROOT; };
 		B51E6D0E19AEBD4A006D8625 /* catalogHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogHotelViewController.h; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 		B5C1EE2B199C4B8F008A9755 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = SOURCE_ROOT; };
 		B5C1EE2C199C4B8F008A9755 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = SOURCE_ROOT; };
 		B5C1EE2D199C4B8F008A9755 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = SOURCE_ROOT; };
+		B5C7522E19CFCD20005A2B04 /* libPods-FlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-FlatUIKit.a"; path = "Pods/build/Debug-iphoneos/libPods-FlatUIKit.a"; sourceTree = "<group>"; };
 		B5E054B219CA99C800F91F9F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C7522F19CFCD20005A2B04 /* libPods-FlatUIKit.a in Frameworks */,
 				B5E054B519CAA35E00F91F9F /* CoreText.framework in Frameworks */,
 				B598583F199AFFBB000A62DF /* CoreGraphics.framework in Frameworks */,
 				B5985843199AFFBC000A62DF /* CoreData.framework in Frameworks */,
@@ -174,6 +179,7 @@
 				B5985877199B035C000A62DF /* AreaListViewController.m */,
 				B5985873199B0267000A62DF /* TopViewController.h */,
 				B5985874199B0267000A62DF /* TopViewController.m */,
+				B50777DA19D26360006CEC0D /* 3_5inch.storyboard */,
 				B5985871199AFFFF000A62DF /* Main.storyboard */,
 				B5985844199AFFBC000A62DF /* JHotelList */,
 				B5985861199AFFBC000A62DF /* JHotelListTests */,
@@ -195,6 +201,7 @@
 		B598583B199AFFBB000A62DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5C7522E19CFCD20005A2B04 /* libPods-FlatUIKit.a */,
 				B5E054B219CA99C800F91F9F /* CoreText.framework */,
 				B598583C199AFFBB000A62DF /* Foundation.framework */,
 				B598583E199AFFBB000A62DF /* CoreGraphics.framework */,
@@ -340,6 +347,7 @@
 				B50951C519CF108C00132E28 /* JHotelList.sqlite-shm in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
 				B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */,
+				B50777DB19D26360006CEC0D /* 3_5inch.storyboard in Resources */,
 				B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +534,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JHotelList/JHotelList-Prefix.pch";
 				INFOPLIST_FILE = "JHotelList/JHotelList-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -540,6 +552,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JHotelList/JHotelList-Prefix.pch";
 				INFOPLIST_FILE = "JHotelList/JHotelList-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
