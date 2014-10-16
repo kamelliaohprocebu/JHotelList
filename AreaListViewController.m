@@ -133,17 +133,10 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    if (indexPath.row == 0 || indexPath.row%2 == 0) {
-//        UIColor *altCellColor = [UIColor colorWithWhite:0.7 alpha:0.1];
-//        cell.backgroundColor = altCellColor;
-//    }
-//    [cell configureFlatCellWithColor:[UIColor greenSeaColor]
-//                       selectedColor:[UIColor cloudsColor]];
-//    
-//    cell.cornerRadius = 5.0f; // optional
-//    cell.separatorHeight = 2.0f; // optional
-    
-    
+    if (indexPath.row == 0 || indexPath.row%2 == 0) {
+        UIColor *altCellColor = [UIColor colorWithWhite:0.7 alpha:0.1];
+        cell.backgroundColor = altCellColor;
+    }
      
 }
 

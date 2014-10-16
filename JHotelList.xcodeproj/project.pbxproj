@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B501F38019C67E5000E9A99E /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B501F37F19C67E5000E9A99E /* JHotelList.sqlite */; };
 		B50777DB19D26360006CEC0D /* 3_5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50777DA19D26360006CEC0D /* 3_5inch.storyboard */; };
 		B50951C519CF108C00132E28 /* JHotelList.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */; };
 		B50951C619CF108C00132E28 /* JHotelList.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */; };
@@ -18,6 +17,7 @@
 		B52B00C919AC239D00CD4AEC /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B00C819AC239D00CD4AEC /* HotelDetailViewController.m */; };
 		B544A5C119A6E65C004ABD99 /* hotelListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */; };
 		B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */; };
+		B583A45E19D3B33400C5BB8A /* JHotelList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B583A45D19D3B33400C5BB8A /* JHotelList.sqlite */; };
 		B598583D199AFFBB000A62DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598583C199AFFBB000A62DF /* Foundation.framework */; };
 		B598583F199AFFBB000A62DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598583E199AFFBB000A62DF /* CoreGraphics.framework */; };
 		B5985841199AFFBB000A62DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5985840199AFFBB000A62DF /* UIKit.framework */; };
@@ -35,6 +35,11 @@
 		B5985872199AFFFF000A62DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5985871199AFFFF000A62DF /* Main.storyboard */; };
 		B5985875199B0267000A62DF /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985874199B0267000A62DF /* TopViewController.m */; };
 		B5985878199B035C000A62DF /* AreaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5985877199B035C000A62DF /* AreaListViewController.m */; };
+		B59B185419D3C5F8005F995B /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = B59B184F19D3C5F8005F995B /* AppIcon29x29.png */; };
+		B59B185519D3C5F8005F995B /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59B185019D3C5F8005F995B /* AppIcon29x29@2x.png */; };
+		B59B185619D3C5F8005F995B /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = B59B185119D3C5F8005F995B /* AppIcon60x60.png */; };
+		B59B185719D3C5F8005F995B /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59B185219D3C5F8005F995B /* AppIcon60x60@2x.png */; };
+		B59B185819D3C5F8005F995B /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59B185319D3C5F8005F995B /* iTunesArtwork@2x.png */; };
 		B5C1EE22199C497A008A9755 /* CountryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE21199C497A008A9755 /* CountryListViewController.m */; };
 		B5C1EE27199C4B32008A9755 /* JHotelList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE25199C4B32008A9755 /* JHotelList.xcdatamodeld */; };
 		B5C1EE2E199C4B8F008A9755 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1EE29199C4B8F008A9755 /* Area.m */; };
@@ -58,7 +63,6 @@
 /* Begin PBXFileReference section */
 		53CEA755E4F6488C88B16137 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8019E4CE15BA48F8BE08D565 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B501F37F19C67E5000E9A99E /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B50777DA19D26360006CEC0D /* 3_5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3_5inch.storyboard; sourceTree = "<group>"; };
 		B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JHotelList.sqlite-shm"; sourceTree = SOURCE_ROOT; };
 		B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JHotelList.sqlite-wal"; sourceTree = SOURCE_ROOT; };
@@ -76,6 +80,7 @@
 		B544A5BF19A6E65C004ABD99 /* hotelListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hotelListTableViewCell.m; sourceTree = "<group>"; };
 		B544A5C019A6E65C004ABD99 /* hotelListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hotelListTableViewCell.xib; sourceTree = "<group>"; };
 		B56562E119AC2A6F000517F1 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
+		B583A45D19D3B33400C5BB8A /* JHotelList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = JHotelList.sqlite; sourceTree = SOURCE_ROOT; };
 		B5985839199AFFBB000A62DF /* JHotelList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHotelList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B598583C199AFFBB000A62DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B598583E199AFFBB000A62DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +103,11 @@
 		B5985874199B0267000A62DF /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 		B5985876199B035C000A62DF /* AreaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaListViewController.h; sourceTree = "<group>"; };
 		B5985877199B035C000A62DF /* AreaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaListViewController.m; sourceTree = "<group>"; };
+		B59B184F19D3C5F8005F995B /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon29x29.png; path = icon/AppIcon29x29.png; sourceTree = SOURCE_ROOT; };
+		B59B185019D3C5F8005F995B /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@2x.png"; path = "icon/AppIcon29x29@2x.png"; sourceTree = SOURCE_ROOT; };
+		B59B185119D3C5F8005F995B /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon60x60.png; path = icon/AppIcon60x60.png; sourceTree = SOURCE_ROOT; };
+		B59B185219D3C5F8005F995B /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon60x60@2x.png"; path = "icon/AppIcon60x60@2x.png"; sourceTree = SOURCE_ROOT; };
+		B59B185319D3C5F8005F995B /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "icon/iTunesArtwork@2x.png"; sourceTree = SOURCE_ROOT; };
 		B5C1EE20199C497A008A9755 /* CountryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryListViewController.h; sourceTree = "<group>"; };
 		B5C1EE21199C497A008A9755 /* CountryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryListViewController.m; sourceTree = "<group>"; };
 		B5C1EE26199C4B32008A9755 /* Proto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Proto.xcdatamodel; sourceTree = "<group>"; };
@@ -234,9 +244,10 @@
 		B5985845199AFFBC000A62DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B59B184E19D3C5E8005F995B /* icon */,
+				B583A45D19D3B33400C5BB8A /* JHotelList.sqlite */,
 				B50951C319CF108C00132E28 /* JHotelList.sqlite-shm */,
 				B50951C419CF108C00132E28 /* JHotelList.sqlite-wal */,
-				B501F37F19C67E5000E9A99E /* JHotelList.sqlite */,
 				B5985846199AFFBC000A62DF /* JHotelList-Info.plist */,
 				B5985847199AFFBC000A62DF /* InfoPlist.strings */,
 				B598584A199AFFBC000A62DF /* main.m */,
@@ -261,6 +272,18 @@
 				B5985864199AFFBC000A62DF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B59B184E19D3C5E8005F995B /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				B59B184F19D3C5F8005F995B /* AppIcon29x29.png */,
+				B59B185019D3C5F8005F995B /* AppIcon29x29@2x.png */,
+				B59B185119D3C5F8005F995B /* AppIcon60x60.png */,
+				B59B185219D3C5F8005F995B /* AppIcon60x60@2x.png */,
+				B59B185319D3C5F8005F995B /* iTunesArtwork@2x.png */,
+			);
+			name = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +335,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Yuki Abe";
 				TargetAttributes = {
+					B5985838199AFFBB000A62DF = {
+						DevelopmentTeam = 6XK8K4658Q;
+					};
 					B5985858199AFFBC000A62DF = {
 						TestTargetID = B5985838199AFFBB000A62DF;
 					};
@@ -341,13 +367,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50951C619CF108C00132E28 /* JHotelList.sqlite-wal in Resources */,
+				B59B185619D3C5F8005F995B /* AppIcon60x60.png in Resources */,
+				B583A45E19D3B33400C5BB8A /* JHotelList.sqlite in Resources */,
 				B5985872199AFFFF000A62DF /* Main.storyboard in Resources */,
 				B5985849199AFFBC000A62DF /* InfoPlist.strings in Resources */,
-				B501F38019C67E5000E9A99E /* JHotelList.sqlite in Resources */,
 				B50951C519CF108C00132E28 /* JHotelList.sqlite-shm in Resources */,
 				B5985854199AFFBC000A62DF /* Images.xcassets in Resources */,
 				B544A5C219A6E65C004ABD99 /* hotelListTableViewCell.xib in Resources */,
+				B59B185419D3C5F8005F995B /* AppIcon29x29.png in Resources */,
+				B59B185819D3C5F8005F995B /* iTunesArtwork@2x.png in Resources */,
 				B50777DB19D26360006CEC0D /* 3_5inch.storyboard in Resources */,
+				B59B185719D3C5F8005F995B /* AppIcon60x60@2x.png in Resources */,
+				B59B185519D3C5F8005F995B /* AppIcon29x29@2x.png in Resources */,
 				B51E6D1519AEBD76006D8625 /* catalogHotelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +502,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -509,7 +541,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yuki Abe (6XK8K4658Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yuki Abe (6XK8K4658Q)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -520,6 +553,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "6417b940-396b-42de-9f5a-32b6366175db";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -531,6 +565,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JHotelList/JHotelList-Prefix.pch";
 				INFOPLIST_FILE = "JHotelList/JHotelList-Info.plist";
@@ -539,6 +575,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -549,6 +586,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JHotelList/JHotelList-Prefix.pch";
 				INFOPLIST_FILE = "JHotelList/JHotelList-Info.plist";
@@ -557,6 +596,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

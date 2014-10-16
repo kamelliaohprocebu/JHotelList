@@ -52,7 +52,7 @@
     // ボタンのシャドー高度
     self.myButton.shadowHeight = 3.0f;
     // ボタンの角丸みの半径
-    self.myButton.cornerRadius = 6.0f;
+    //self.myButton.cornerRadius = 6.0f;
     // ボタンの文字ファンド
     self.myButton.titleLabel.font = [UIFont boldFlatFontOfSize:20];
     // 通常状態の文字色
@@ -67,7 +67,7 @@
     // ボタンのシャドー高度
     self.myButton1.shadowHeight = 3.0f;
     // ボタンの角丸みの半径
-    self.myButton1.cornerRadius = 6.0f;
+    //self.myButton1.cornerRadius = 6.0f;
     // ボタンの文字ファンド
     self.myButton1.titleLabel.font = [UIFont boldFlatFontOfSize:20];
     // 通常状態の文字色

@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Jack Flintermann. All rights reserved.
 //
 
+
+@end
 #import <UIKit/UIKit.h>
 
 @interface UIImage (FlatUI)
